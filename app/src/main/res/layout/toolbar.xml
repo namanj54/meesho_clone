@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/items"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/userlogo"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                app:civ_border_width="1dp"
+                android:src="@drawable/init_user"/>
+
+            <TextView
+                android:id="@+id/userhome"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                android:text="Username"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/wishlist"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/like" />
+            <ImageView
+                android:id="@+id/wish_count"
+                android:layout_marginTop="11.2pt"
+                android:layout_marginLeft="-3.3pt"
+                android:layout_width="4pt"
+                android:layout_height="3.9pt"
+                android:src="@drawable/badge_background" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/baseline_notifications_none_24" />
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/baseline_shopping_cart_24" />
+
+            <TextView
+                android:id="@+id/cart_badge"
+                android:layout_width="9pt"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6pt"
+                android:layout_marginLeft="-5pt"
+                android:background="@drawable/badge_background"
+                android:gravity="center"
+                android:padding="1.1pt"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginBottom="5dp"
+              android:weightSum="2"
+              android:background="@color/gray_color"
+              android:orientation="horizontal">
+          <androidx.appcompat.widget.SearchView
+              app:iconifiedByDefault="false"
+              android:id="@+id/searchview"
+              android:layout_weight="1.7"
+              android:layout_marginTop="5dp"
+              android:layout_width="0dp"
+              android:layout_height="40dp"
+              />
+              <View
+                 android:background="@color/voice_ass_color"
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"/>
+              <ImageView
+                  android:layout_weight=".3"
+                  android:id="@+id/speech_ass"
+                  android:layout_width="0dp"
+                  android:layout_height="25dp"
+                  android:layout_marginTop="8dp"
+                  android:src="@drawable/baseline_keyboard_voice_24" />
+
+
+          </LinearLayout>
+      </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</RelativeLayout>

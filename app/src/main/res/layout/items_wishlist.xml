@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp">
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="@dimen/iv_wish"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_delete_outline_24"></ImageView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:elevation="6dp"
+                android:id="@+id/prod1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/men2">
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/prod_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:drawableRight="@drawable/baseline_share_24"
+                android:text="Mens new shirt"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prod_name"
+                android:layout_marginStart="5dp"
+                android:text="463"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/offers"
+                android:padding="7dp"
+                android:layout_marginStart="5dp"
+                android:text="463 with exciting offers"
+                android:textColor="#045907"
+                android:layout_marginBottom="4dp"
+                android:textSize="12sp" />
+
+
+
+        
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

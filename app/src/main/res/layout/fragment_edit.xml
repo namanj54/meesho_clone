@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.EditFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/mainview"
+        android:nestedScrollingEnabled="false"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_gravity="center"
+                    android:id="@+id/pic"
+                    app:civ_border_width="1dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/meesho"/>
+
+
+                <TextView
+                android:id="@+id/pic_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic"
+              android:layout_gravity="center"
+                android:text="ADD PICTURE"
+                android:textColor="@color/pink"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/pic"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                tools:context=".MainActivity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_color"
+                    android:id = "@+id/layoutEmail"
+                    style="@style/edittextstyle">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name*"
+                        android:id="@+id/full"
+                        android:backgroundTint="@color/black"
+                        android:inputType = "textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="7pt" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id = "@+id/layout_phn"
+                    android:background="@color/gray_color"
+                    style="@style/edittextstyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone number*"
+                        android:id="@+id/ph"
+                        android:maxLength="10"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/black"
+                        android:textSize="7pt"/>
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <Spinner
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spner"
+                        android:spinnerMode="dropdown"
+                        />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/pin_code"
+                    android:background="@color/gray_color"
+                    android:layout_margin="10dp"
+                    style ="@style/edittextstyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pin Code*"
+                        android:id="@+id/pin"
+                        android:maxLength="5"
+                        android:backgroundTint="@color/black"
+                        android:inputType = "textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="7pt"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_color"
+                    android:layout_margin="10dp"
+                    android:id = "@+id/layout_city"
+                    style ="@style/edittextstyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City*"
+                        android:id="@+id/city"
+                        android:backgroundTint="@color/black"
+                        android:inputType = "textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="7pt"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_state"
+                    android:background="@color/gray_color"
+
+                    android:layout_margin="10dp"
+                    style ="@style/edittextstyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State*"
+                        android:backgroundTint="@color/black"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="7pt"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/save"
+                    style="@style/myButtonstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="Save"
+                    android:background="@color/pink"
+                    android:textColor="@color/white">
+
+                </Button>
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

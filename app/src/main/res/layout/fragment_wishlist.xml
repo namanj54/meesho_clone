@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_color">
+    <ImageView
+        android:id="@+id/iv_empwish1"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:src="@drawable/emptywish"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:text="Wishes"
+            android:background="@drawable/wishlist_bg"
+            android:textColor="@color/pink"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25dp"></TextView>
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/gray_color"
+            android:visibility="gone"
+            android:id="@+id/wish_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

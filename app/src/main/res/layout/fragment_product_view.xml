@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_color"
+    tools:context=".Fragment.ProductViewFragment">
+
+    <ScrollView
+        android:id="@+id/mainview"
+        android:nestedScrollingEnabled="false"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@color/locationcolor">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_location_on_24"
+
+                        android:layout_marginLeft="10dp"
+                        >
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Add location to get Extra Discount >>"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="8pt" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:elevation="6dp"
+                            android:id="@+id/prodview1"
+                            android:layout_margin="50dp"
+                            android:layout_width="300dp"
+                            android:layout_height="380dp"
+                            android:background="@drawable/looking_frame"
+                            android:src="@drawable/men2">
+                        </ImageView>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/pro_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="1"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/prodview_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawableRight="@drawable/baseline_share_24"
+                            android:text="Mens new shirt"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/light_gray"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/prod_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prod_name"
+                            android:layout_margin="5dp"
+                            android:text="463"
+                            android:textColor="@color/black"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/prod_offers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/offers"
+                            android:padding="7dp"
+                            android:text="463 with exciting offers"
+                            android:textColor="#045907"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/prod_free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/free"
+                            android:padding="5dp"
+                            android:text="Free Dielievery"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:id="@+id/lin_status_prodview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/rating"
+                            android:orientation="horizontal"
+                            android:padding="2.5dp">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/baseline_star_24">
+
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/prod_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:paddingEnd="5dp"
+                                android:text="4.7"
+                                android:textColor="@color/white"
+                                android:textSize="19dp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:padding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Product Details"
+                        android:textColor="@color/black"
+                        android:layout_gravity="left"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/prodetails_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Name:Mens new shirt"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/productdetails_fabric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prod_name"
+                        android:layout_margin="5dp"
+                        android:text="fabric:cotten"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Made in india"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:text="Quantity:1N"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Check Delivery Date"
+                        android:textColor="@color/black"
+                        android:layout_gravity="left"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img1"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/phno"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:background="@color/gray_color"
+                            android:hint="Enter deilevery pincode"
+                            android:padding="5dp"
+                            android:layout_margin="8dp"
+                            android:textColorHint="@color/black"
+                            android:textSize="15dp"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="18dp"
+                            android:id="@+id/prod_view_check"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Check"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/pink"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/baseline_shopping_bag_24"
+                        android:text="  Enter Pincode for Estimated Delivery Date "
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                       />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/baseline_fire_truck_24"
+                        android:text="  Dispatch in 2 Days"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                       />
+
+
+
+
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/delivery"
+                    android:background="@color/white"
+                    >
+
+                </ImageView>
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.8"
+                     android:id="@+id/addto_cart"
+                     app:initialNumber="1"
+                     app:finalNumber="10"
+                     app:textSize="8dp"/>
+
+
+                    <Button
+                        android:layout_margin="10dp"
+                        android:id="@+id/buy_now"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink"
+                        android:padding="8dp"
+                        android:text=">> Buy Now"
+                        android:textColor="@color/white">
+
+                    </Button>
+                </LinearLayout>
+                </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

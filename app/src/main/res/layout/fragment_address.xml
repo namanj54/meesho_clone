@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    tools:context=".Fragment.AddressFragment">
+
+    <ScrollView
+        android:nestedScrollingEnabled="false"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                         android:layout_marginTop="20dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_info_24"
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Order will be delievered at this address"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    tools:context=".MainActivity">
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_local_phone_24"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:textSize="19dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Contact Details"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:id = "@+id/add_name1"
+                        style="@style/edittextstyle">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:id="@+id/add_name"
+                            android:backgroundTint="@color/black"
+                            android:inputType = "textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:id = "@+id/add_phn1"
+                        android:background="@color/white"
+                        style="@style/edittextstyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone number"
+                            android:id="@+id/add_phn"
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:backgroundTint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="7pt"/>
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    tools:context=".MainActivity">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_maps_home_work_24"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:textSize="19dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Address"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:id = "@+id/add_hno"
+                        style="@style/edittextstyle">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="House no./Building Name"
+                            android:id="@+id/add_houseno"
+                            android:backgroundTint="@color/black"
+                            android:inputType = "textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:id = "@+id/layout_locality"
+                        android:background="@color/white"
+                        style="@style/edittextstyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Road Name/Area/Locality"
+                            android:id="@+id/add_locality"
+                            android:maxLength="10"
+                            android:backgroundTint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="7pt"/>
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id = "@+id/add_layout_pin"
+                        android:background="@color/white"
+                        android:layout_margin="10dp"
+                        style ="@style/edittextstyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Pin Code*"
+                            android:id="@+id/add_pin"
+                            android:maxLength="6"
+                            android:backgroundTint="@color/black"
+                            android:inputType = "number"
+                            android:textColor="@color/black"
+                            android:textSize="7pt"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_margin="10dp"
+                        android:id = "@+id/add_layout_city"
+                        style ="@style/edittextstyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="City*"
+                            android:id="@+id/add_city"
+                            android:backgroundTint="@color/black"
+                            android:inputType = "textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="7pt"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/add_layout_state"
+                        android:background="@color/white"
+
+                        android:layout_margin="10dp"
+                        style ="@style/edittextstyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/add_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="State*"
+                            android:backgroundTint="@color/black"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="7pt"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/add_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:text="Save Address and Continue"
+                        android:background="@color/pink"
+                        android:textColor="@color/white">
+
+                    </Button>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

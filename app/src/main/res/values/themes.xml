@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NewProjectSetup" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="buttonStyle">@style/myButtonstyle</item>
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+        <item name="android:textViewStyle">@style/mytextview</item>
+        <item name="android:editTextStyle">@style/edittextstyle</item>
+        <item name="spinnerStyle">@style/spinner_style</item>
+
+    </style>
+    <!-- Customize your theme here. -->
+    <style name="myButtonstyle" parent="Widget.AppCompat.Button">
+        <item name="background">@color/pink</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">normal</item>
+
+
+
+
+
+
+
+    </style>
+
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+    <style name="edittextstyle" parent="Widget.AppCompat.EditText">
+        <item name="hintTextColor">@color/pink</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="boxStrokeColor">@color/pink</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/pink</item>
+    </style>
+
+    <style name="BottomNavigationView.ActiveIndicator" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/pink</item>
+    </style>
+    <style name="BottomNavigationView.inActiveIndicator" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="mytextview" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+    <style name="spinner_style" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textFillColor">@color/black</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:autoSizeMinTextSize" tools:ignore="NewApi">6pt</item>
+
+
+    </style>
+
+
+    <style name="CustomBottomSheetDialog"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="buttonStyle">@style/myButtonstyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <!--    <style name="BottomNavigation">-->
+    <!--        <item name="android:background">@color/white</item>-->
+    <!--        <item name="itemBackground">@drawable/navigation_bar_item_bg</item>-->
+    <!--        <item name="itemIconTint">@color/pink</item>-->
+    <!--        <item name="itemTextColor">@color/black</item>-->
+
+    <!--    </style>-->
+
+
+</resources>

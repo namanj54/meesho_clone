@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.forgotActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:padding="30dp"
+            android:layout_gravity="center"
+            android:text="meesho"
+            android:textAlignment="center"
+            android:textColor="@color/pink"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/round"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt"
+                android:layout_marginTop="30dp"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/user_up"
+                android:layout_margin="50dp"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_color"
+                android:hint=" username"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/user"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                />
+
+
+            <EditText
+                android:id="@+id/pass_up"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_below="@id/user_reg"
+                android:background="@color/gray_color"
+                android:hint="new password"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="-30dp"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                />
+            <EditText
+                android:id="@+id/confirmpass_up"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_below="@id/pass_reg"
+                android:background="@color/gray_color"
+                android:hint="Confirm password"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                />
+
+
+
+
+
+            <Button
+                android:id="@+id/new_reg"
+                style="@style/myButtonstyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="CHANGE"
+                android:background="@color/pink"
+                android:textColor="@color/white">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

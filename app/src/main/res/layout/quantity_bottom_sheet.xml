@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_bg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rush_cart" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="Rush to cart"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="33dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="45dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/added"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1.2"
+                android:background="@color/pink"
+                android:text="ADDED +"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                tools:ignore="ExtraText" />
+
+            <Button
+                android:id="@+id/mov_to_cart"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1.2"
+                android:background="@color/pink"
+                android:textSize="17dp"
+                android:text="Move to cart"
+                android:textColor="@color/white"
+                tools:ignore="ExtraText">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delivery"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

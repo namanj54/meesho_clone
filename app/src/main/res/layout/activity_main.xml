@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    tools:context=".Activity.MainActivity">
+    <include
+        android:id="@+id/in_tool"
+        layout="@layout/toolbar"/>
+    <FrameLayout
+        android:id="@+id/conatiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bot_nav"
+        android:layout_below="@id/in_tool"
+       >
+
+    </FrameLayout>
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bot_nav"
+        layout="@layout/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

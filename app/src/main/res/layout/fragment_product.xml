@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray_color"
+    android:layout_height="wrap_content">
+    <LinearLayout
+       android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <HorizontalScrollView
+                android:nestedScrollingEnabled="false"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:background="@drawable/bg_simpel_border"
+                    android:layout_gravity="center"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="8pt"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/foryou"
+                        android:text="Sort"
+                        android:drawableLeft="@drawable/baseline_keyboard_double_arrow_down_24"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+                    <View
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:background="@color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textSize="8pt"
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <View
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:background="@color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textSize="8pt"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <View
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:background="@color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textSize="8pt"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Filters"
+                        android:drawableLeft="@drawable/baseline_sort_24"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="3dp"
+            android:id="@+id/products_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_color">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

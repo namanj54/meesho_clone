@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lin_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="170dp">
+
+            <ImageView
+                android:id="@+id/iv_wish"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/wish"></ImageView>
+
+            <ImageView
+                android:id="@+id/iv_no_wish"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/wish1"
+                android:visibility="gone"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:elevation="6dp"
+            android:id="@+id/prod1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/men2">
+        </ImageView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/od"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="1sp" />
+        <TextView
+            android:id="@+id/prod_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableRight="@drawable/baseline_share_24"
+            android:text="Mens new shirt"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prod_name"
+            android:layout_margin="5dp"
+            android:text="463"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/offers"
+            android:padding="7dp"
+            android:text="463 with exciting offers"
+            android:textColor="#045907"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="3dp"
+            android:background="@drawable/free"
+            android:padding="5dp"
+            android:text="Free Dielievery"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:id="@+id/lin_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rating"
+            android:orientation="horizontal"
+            android:padding="2.5dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:src="@drawable/baseline_star_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="4.7"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

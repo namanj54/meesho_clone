@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:id="@+id/lin_wedcat"
+        android:gravity="center"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@drawable/imageframe"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/iv_wed"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/men2">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/iv_men"
+                android:background="@drawable/cat_round"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:id="@+id/wedcat_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mens "
+                    android:textColor="@color/white"
+                    android:textAlignment="center">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
